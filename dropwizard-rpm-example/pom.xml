@@ -63,6 +63,8 @@
 				<groupId>org.codehaus.mojo</groupId>
 				<artifactId>rpm-maven-plugin</artifactId>
 				<version>2.1-alpha-4</version>
+				<extensions>true</extensions>
+				<!--
 				<executions>
 					<execution>
 						<id>generate-rpm</id>
@@ -71,6 +73,7 @@
 						</goals>
 					</execution>
 				</executions>
+				-->
 				<configuration>
 					<license>(c) 2014, NoOne</license>
 					<distribution>Anyone 2014</distribution>
@@ -122,5 +125,7 @@
 			<scope>test</scope>
 		</dependency>
 	</dependencies>
+
+	<packaging>rpm</packaging>
 
 </project>
