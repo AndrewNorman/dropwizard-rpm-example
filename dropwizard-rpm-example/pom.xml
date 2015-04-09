@@ -36,6 +36,7 @@
 								<exclude>META-INF/*.SF</exclude>
 								<exclude>META-INF/*.DSA</exclude>
 								<exclude>META-INF/*.RSA</exclude>
+								<exclude>*.rpm</exclude>
 							</excludes>
 						</filter>
 					</filters>
@@ -65,9 +66,9 @@
 				<version>2.1-alpha-4</version>
 				<executions>
 					<execution>
-						<id>generate-rpm</id>
+						<id>attach-rpm</id>
 						<goals>
-							<goal>rpm</goal>
+							<goal>attached-rpm</goal>
 						</goals>
 					</execution>
 				</executions>
@@ -113,7 +114,7 @@
 		<dependency>
 			<groupId>io.dropwizard</groupId>
 			<artifactId>dropwizard-core</artifactId>
-			<version>0.7.1</version>lib
+			<version>0.7.1</version>
 		</dependency>
 		<dependency>
 			<groupId>junit</groupId>
